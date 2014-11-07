@@ -1,0 +1,13 @@
+.wopheader-container {
+    background-color: #fff;
+    padding: 0px;
+}
+
+.wopheader-container .wopblock-container p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wopheader-container .woptoolbar-container {
+    float: right;
+}

@@ -1,0 +1,13 @@
+.woptoolbar-container {
+}
+
+.woptoolbar-container .wopblock-container {
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.woptoolbar-container .wopblock-container .wopblock-content-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
