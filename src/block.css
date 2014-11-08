@@ -85,7 +85,7 @@
 
 /* footer */
 .wopfooter-container {
-    /* background-color: #eee; */
+    border-top: solid 1px #eee;
     padding-top: 8px;
     height: 40px;
 }
