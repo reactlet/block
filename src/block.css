@@ -1,3 +1,4 @@
+/* block */
 .wopblock-container {
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,3 +36,81 @@
 .wopblock-container .wopblock-content-container:hover .wopblock-text-container {
     /* transform: translate(.2em, 0); */
 }
+
+
+/* logo */
+.woplogo-container .wopblock-container .wopblock-content-container {
+    background-color: transparent;
+    background-size: contain;
+    color: #111;
+    font-size: 1.6em;
+}
+
+.woplogo-container .wopblock-container .wopblock-content-container .wopblock-text-container {
+    font-size: 1.8em;
+}
+
+
+/* toolbar */
+.woptoolbar-container {
+}
+
+.woptoolbar-container .wopblock-container {
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.woptoolbar-container .wopblock-container .wopblock-content-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* header */
+.wopheader-container {
+    background-color: #fff;
+    padding: 0px;
+}
+
+.wopheader-container .wopblock-container p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wopheader-container .woptoolbar-container {
+    float: right;
+}
+
+
+/* footer */
+.wopfooter-container {
+    background-color: #eee;
+    padding-top: 8px;
+    height: 40px;
+}
+
+.wopfooter-container .main-toolbar p {
+    padding: 5px;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    font-size: 0.9em;
+}
+
+.wopfooter-container .social-toolbar p {
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.wopfooter-container .social-toolbar .wopblock-container {
+    width: 40px;
+    margin-right: 0px;
+}
+
+.wopfooter-container .social-toolbar .wopblock-container p{
+    background-color: transparent;
+    color: #aaa;
+}
+
