@@ -1,6 +1,6 @@
 // Block component
-var Block = React.createClass({
-    name: 'block',
+var WopBlock = React.createClass({
+    name: 'wopblock',
     mixins: [getCommonMixin],
     
     // attribute definitions
@@ -18,7 +18,7 @@ var Block = React.createClass({
     
     render: function() {
         // set icon class names
-        this.state.iconClassNames = ['block-icon-container'];
+        this.state.iconClassNames = ['wopblock-icon-container'];
         this.state.iconClass && this.state.iconClassNames.push(this.state.iconClass);
         var iconContent = '';
         // iconClass is CSS class name for icon in Bootstrape
@@ -35,9 +35,9 @@ var Block = React.createClass({
         }
         // set content display
         var content =
-            <div className="block-content-container" >
+            <div className="wopblock-content-container" >
                 { iconContent }
-                <span className="block-text-container">{ this.state.text }</span>
+                <span className="wopblock-text-container">{ this.state.text }</span>
             </div>;
         if (this.state.link) {
             content =
@@ -52,8 +52,8 @@ var Block = React.createClass({
 });
 
 // Logo component
-var Logo = React.createClass({
-    name: 'logo',
+var WopLogo = React.createClass({
+    name: 'woplogo',
     mixins: [getCommonMixin],
     
     // attribute definitions
@@ -70,7 +70,7 @@ var Logo = React.createClass({
     render: function() {
         return (
             <div className={ this.state.containerClassNames.join(' ') } >
-                <Block data={ this.state } />
+                <WopBlock data={ this.state } />
             </div>
         );
     }
@@ -78,8 +78,8 @@ var Logo = React.createClass({
 
 
 // Toolbar component
-var Toolbar = React.createClass({
-    name: 'toolbar',
+var WopToolbar = React.createClass({
+    name: 'woptoolbar',
     mixins: [getCommonMixin],
     
     // attribute definitions
@@ -95,7 +95,7 @@ var Toolbar = React.createClass({
         var links = [];
         this.state.buttons.map(function(button) {
             links.push(
-                <Block data={ button } />
+                <WopBlock data={ button } />
             );
         })
         return (
@@ -108,8 +108,8 @@ var Toolbar = React.createClass({
 
 
 // Header component
-var Header = React.createClass({
-    name: 'header',
+var WopHeader = React.createClass({
+    name: 'wopheader',
     mixins: [getCommonMixin],
     
     // attribute definitions
@@ -126,10 +126,10 @@ var Header = React.createClass({
         return (
             <div className={ this.state.containerClassNames.join(' ') } >
                 <div className="col-md-4">
-                    <Logo data={ this.state.logo } />
+                    <WopLogo data={ this.state.logo } />
                 </div>
                 <div className="col-md-8">
-                    <Toolbar data={ this.state.toolbar } />
+                    <WopToolbar data={ this.state.toolbar } />
                 </div>
             </div>
         );
@@ -137,8 +137,8 @@ var Header = React.createClass({
 });
 
 // Footer component
-var Footer = React.createClass({
-    name: 'footer',
+var WopFooter = React.createClass({
+    name: 'wopfooter',
     mixins: [getCommonMixin],
     
     getAttributes: function() {
@@ -154,10 +154,10 @@ var Footer = React.createClass({
         return (
             <div className={ this.state.containerClassNames.join(' ') } >
                 <div className="col-md-10">
-                    <Toolbar data={ this.state.mainToolbar } />
+                    <WopToolbar data={ this.state.mainToolbar } />
                 </div>
                 <div className="col-md-2">
-                    <Toolbar data={ this.state.socialToolbar } />
+                    <WopToolbar data={ this.state.socialToolbar } />
                 </div>
             </div>
         );
